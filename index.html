@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!----------------iconscout cdn=============================-->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <!------------------swiper css-------------------------->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+       <!-- Swiper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <!-------------------main css-------------------->
+            <link rel="stylesheet" href="./index.css">
+            <!-------------main js---------------------->
+            <link defer rel="stylesheet" href="./index.js">
+      <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h3>skySocial</h3>
+            </div>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" name="search" placeholder="search for creators, inspirations and projects">
+            </div>
+            <div>
+                <label for="create-post"class="btn btn-primary">Create</label>
+                <span class="profile-photo">
+                    <img src="./assert/images/profile-1.jpg">
+                </span>
+            </div>
+        </div>
+    </header>
+    <!----=====END OF THE HEADER SECTION================-->
+
+    <!---------======MAIN SECTION===========================-->
+    <main>
+        <div class="container">
+            <div class="left">
+                <div>
+                                    <!---user----------------------->
+                <div class="user">
+                    <div class="profile-photo">
+                        <img src="./assert/images/profile-1.jpg">
+                    </div>
+                    <div class="user-name">
+                        <h5>Mottey Edith</h5>
+                        <small class="muted">@happy</small>
+                    </div>
+                </div>
+    
+                <!----------side bar-->
+                <div class="side-bar">
+                    <ul>
+                        <li class="active side-bar-item">
+                            <i class="uil uil-home"></i>
+                            <h5>Home</h5>
+                        </li>
+                        <li class="side-bar-item">
+                            <i class="uil uil-compass"></i>
+                            <h5>Explore</h5>
+                        </li>
+                        <li class="notification side-bar-item removeCount">
+                            <span class="count">
+                                <span>9+</span>
+                            <i class="uil uil-bell"></i>
+                            </span>
+                            <h5>Notifications</h5>
+                            <div class="notifications">
+                                <ul class="notification-lists">
+                                    <li>
+                                        <div class="profile-photo">
+                                        <img src="./assert/images/profile-2.jpg">
+                                        </div>
+                                        <div>
+                                            <b>KeKe Benjamin</b> accepted your friend request
+                                            <small class="muted">2 DAYS AGO</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="profile-photo">
+                                            <img src="./assert/images/profile-3.jpg">
+                                        </div>
+                                        <div>
+                                            <b>John Doe</b> Comment on your post
+                                            <small class="muted">3 HOURS AGO</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="profile-photo">
+                                            <img src="./assert/images/profile-4.jpg">
+                                        </div>
+                                        <div>
+                                            <b>Mary Oppongg</b>and <b>283 others </b> liked your post
+                                            <small class="muted">4 MINUTES</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="profile-photo">
+                                            <img src="./assert/images/profile-5.jpg">
+                                        </div>
+                                        <div>
+                                            <b>Doris Y.Lartey</b>commented on a post you are tagged in
+                                            <small class="muted">2 DAYS AGO</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="profile-photo">
+                                            <img src="./assert/images/profile-6.jpg">
+                                        </div>
+                                        <div>
+                                            <b>Donald Trump</b>commented on a post you are tagged in
+                                            <small class="muted">1 HOUR AGO</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="profile-photo">
+                                            <img src="./assert/images/profile-7.jpg">
+                                        </div>
+                                        <div>
+                                            <b>Jane Doe</b>commented on your post
+                                            <small class="muted">2 DAYS AGO</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="side-bar-item get-message removeCount">
+                            <span class="count">
+                                <span>7</span>
+                            <i class="uil uil-envelope"></i>
+                            </span>
+                            <h5>Message</h5>
+                        </li>
+                        <li class="side-bar-item">
+                            <i class="uil uil-bookmark"></i>
+                            <h5>Bookmarks</h5>
+                        </li>
+                        <li class="side-bar-item">
+                            <i class="uil uil-line"></i>
+                            <h5>Analytics</h5>
+                        </li>
+                        <li class="side-bar-item get-theme">
+                            <i class="uil uil-palette"></i>
+                            <h5>Theme</h5>
+                        </li>
+                        <li class="side-bar-item">
+                            <i class="uil uil-setting"></i>
+                            <h5>Settings</h5>
+                        </li>
+                    </ul>
+                </div>
+    
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+                </div>
+
+            </div>
+
+            <!-------------middle---------------------->
+            <div class="middle">
+                <!----------------stories------------------------>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-1.jpg">
+                            </div>
+                            <div class="name">
+                                Your Story
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-10.jpg">
+                            </div>
+                            <div class="name">
+                                Lila Jammy
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-11.jpg">
+                            </div>
+                            <div class="name">
+                                Daniel Bal
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-12.jpg">
+                            </div>
+                            <div class="name">
+                                Hanna Doe
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-10.jpg">
+                            </div>
+                            <div class="name">
+                                Ama Kwe
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-17.jpg">
+                            </div>
+                            <div class="name">
+                                Susiana Ataebobo
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="profile-photo">
+                                <img src="./assert/images/profile-12.jpg">
+                            </div>
+                            <div class="name">
+                                Holy Land
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post ">
+                    <div class="profile-photo">
+                        <img src="./assert/images/profile-1.jpg">
+                    </div>
+                    <input type="search"id="create-post" name="post" placeholder="create a post">
+                    <label for="create-post" class="btn btn-primary">Post</label>
+                </div>
+                <!-----------FEEDS------------------------------->
+                <div class="feeds">
+                    <!------------------FEED-------------->
+                    <div class="feed">
+                        <div class="header">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-11.jpg">
+                                </div>
+                                <div>
+                                    <h5>Lana Rose</h5>
+                                    <div>Dubia, 15 MINUTES AGO</div>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="posts">
+                            <img src="./assert/images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <div class="liker-photo">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-11.jpg">
+                                </div>
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-13.jpg">
+                                </div>
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-12.jpg">
+                                </div>
+                            </div>
+                            <p>
+                                Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                            </p>
+                        </div>
+                        <div class="comments">
+                            <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                            <small class="muted">View all 277 comments</small>
+                        </div>
+                    </div>
+                            <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/profile-13.jpg">
+                            </div>
+    
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                                                       <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/profile-16.jpg">
+                            </div>
+
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                            <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-7.jpg">
+                            </div>
+    
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                                                       <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-6.jpg">
+                            </div>
+
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                            <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-5.jpg">
+                            </div>
+    
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                                                       <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-4.jpg">
+                            </div>
+
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                                       <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-3.jpg">
+                            </div>
+    
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                                                       <!------------------FEED-------------->
+                        <div class="feed">
+                            <div class="header">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div>
+                                        <h5>Lana Rose</h5>
+                                        <div>Dubia, 15 MINUTES AGO</div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                            <div class="posts">
+                                <img src="./assert/images/feed-2.jpg">
+                            </div>
+
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil uil-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+                            <div class="likes">
+                                <div class="liker-photo">
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-11.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-13.jpg">
+                                    </div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-12.jpg">
+                                    </div>
+                                </div>
+                                <p>
+                                    Liked by <b>Ernest Achiever </b>and <b>2,322 others</b>
+                                </p>
+                            </div>
+                            <div class="comments">
+                                <b>Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle</b><br/>
+                                <small class="muted">View all 277 comments</small>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!--------------right--------------------------->
+            <div class="right">
+                <div class="messages-container">
+                    <div class="messages">
+                        <div class="header">
+                            <h4>Message</h4>
+                            <i class="uil uil-edit"></i>
+                        </div>
+                        <div class="search-bar message-search">
+                            <i class="uil uil-search"></i>
+                            <input type="search" id="message-search" placeholder="Search Message">
+                        </div>
+                        <div class="head">
+                            <div class="primary active">Primary</div>
+                            <div class="Genereal">General</div>
+                            <div class="request">Request(7)</div>
+                        </div>
+                        <ul class="message-list">
+                            <li class="message ">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-13.jpg">
+                                    <span class="active"></span>
+                                </div>
+                                <div>
+                                    <h5>Jane Quist</h5>
+                                    <p class="muted">coding day got up</p>
+                                </div>
+                            </li>
+                            <li class="message">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-3.jpg">
+                                </div>
+                                <div>
+                                    <h5>Kwame</h5>
+                                    <p class="muted">side out time</p>
+                                </div>
+                            </li>
+                            <li class="message">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-7.jpg">
+                                    <span class="active"></span>
+                                </div>
+                                <div>
+                                    <h5>Yaw Okumo</h5>
+                                    <p class="muted">We got to win today</p>
+                                </div>
+                            </li>
+                            <li class="message">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-4.jpg">
+                                </div>
+                                <div>
+                                    <h5>Bra Francis</h5>
+                                    <p class="muted">pls I need cal</p>
+                                </div>
+                            </li>
+                            <li class="message">
+                                <div class="profile-photo">
+                                    <img src="./assert/images/profile-9.jpg">
+                                </div>
+                                <div>
+                                    <h5>Game Code</h5>
+                                    <p class="muted">bruh</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--------request-------------------->
+                    <div class="friends-requests">
+                        <h4 class="muted">Requests</h4>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/story-5.jpg">
+                                    </div>
+                                    <div>
+                                        <h4>Ahmah</h4>
+                                        <p class="muted">8 mutual friends</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Accept</button>
+                                    <button class="btn btn-outline">Decline</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/profile-16.jpg">
+                                    </div>
+                                    <div>
+                                        <h4>Daavi Gobe</h4>
+                                        <p class="muted">9 mutual friends</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Accept</button>
+                                    <button class="btn btn-outline">Decline</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="profile-photo">
+                                        <img src="./assert/images/story-6.jpg">
+                                    </div>
+                                    <div>
+                                        <h4>Sis Korkor</h4>
+                                        <p class="muted">8 mutual friends</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">Accept</button>
+                                    <button class="btn btn-outline">Decline</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------CUSTOMIZE THEMES------------------------>
+        <div class="customize-theme">
+            <div class="theme">
+                <div class="header">
+                    <h3>Customize your view</h3>
+                    <p>Manage Your size, color and background</p>
+                </div>
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <small>Aa</small>
+                        <div class="size">
+                            <span class="active font-size1"></span>
+                            <span class="font-size2"></span>
+                            <span class="font-size3"></span>
+                            <span class="font-size4"></span>
+                            <span class="font-size5"></span>
+                            <span class="font-size6"></span>
+                        </div>
+                        <small>Aa</small>
+                    </div>
+                </div>
+                <div class="font-color">
+                    <h4>Color</h4>
+                    <div class="color">
+                        <span class="active font-color1"></span>
+                        <span class="font-color2"></span>
+                        <span class="font-color3"></span>
+                        <span class="font-color4"></span>
+                        <span class="font-color5"></span>
+                    </div>
+                </div>
+                <div class="background-color">
+                    <h4>Background color</h4>
+                    <div class="colors  ">
+                        <div class="color bg-color1 active">
+                            <span></span><h5>Light</h5>
+                        </div>
+                        <div class="color bg-color2">
+                            <span></span><h5>Dim</h5>
+                        </div>
+                        <div class="color bg-color3">
+                            <span></span><h5>Light Out</h5>
+                        </div>
+                        <div class="color bg-color4">
+                            <span></span><h5>Default</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!------------main js-->
+    <script src="./index.js"></script>
+</body>
+</html>
